@@ -1,0 +1,24 @@
+sacle = find_scale(input_array)
+max_height = find_max(input_array) * scale
+for (i=max_height; i>=0; i--) 
+   if (some condition)
+      print_in_N_digits(round(i/scale)) // to label the scale
+   else
+      print_in_N_digits()               // lines with no labels
+   print " |"                           // set up the vertical axis
+   for (j=first_bin to lat_bin)
+      if (input[j]*scale >= i)
+         print("#")
+      else
+         print(" ")
+      print_new_line
+print_in_N_digits(0)
+print(" +")
+for (j=first_bin to last_bin)
+   print("-")
+print_new_line
+print_in_N_digits()
+print(" 0")
+for (j=first_bin to last_bin)
+   if (some other condition)
+      print_bin_label
